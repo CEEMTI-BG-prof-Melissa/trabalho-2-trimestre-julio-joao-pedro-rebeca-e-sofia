@@ -1,0 +1,49 @@
+/* Seletores de elementos e classes combinados */
+body{
+    font-size: 30px;
+    padding: 5%;
+}
+
+header h1 {
+    color: #2E8B57;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Seletores de atributos */
+a[href^="#"] {
+    text-decoration: none;
+    color: #006400;
+}
+
+a[href="#conceito1"]:hover,
+a[href="#conceito2"]:hover,
+a[href="#conceito3"]:hover {
+    color: #FF4500;
+} 
+
+/* Pseudo-classes */
+nav ul li:first-child {
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+    font-style: italic;
+}
+
+a:visited {
+    color: purple;
+}
+
+main {
+    width: auto;
+}
+
+section:nth-child(even) {
+    background-color: #f0f8ff;
+}
